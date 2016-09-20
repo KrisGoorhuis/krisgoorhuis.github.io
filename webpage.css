@@ -1,1 +1,87 @@
+body {
+   background-color: rgba(255, 255, 255, 1);
+   margin: 0px;
+}
 
+#topBar {
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   height: 80px;
+   background-color: rgba(255, 255, 255, 0.9);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#initials {
+   display: block;
+   width: 100px;
+   min-width: 100px;
+   height: 80px;
+   font-size: 50px;
+   line-height: 80px;
+   font-family: 'Passion One', cursive;
+   text-align: center;
+   color: rgba(109, 149, 59, 1);
+   background-color: black;
+   text-decoration: none;
+}
+
+#navWrapper {
+   width: 100%;
+   position: fixed;
+   top: 0px;
+}
+
+nav li {
+   line-height: 80px;
+   padding-right: 50px;
+   display: inline-block;
+   font-family: ABeeZee;
+   
+}
+
+nav a {
+   text-decoration: none;
+   color: black;
+}
+
+#centerColumn {
+   width: 50%;
+   margin: auto;
+}
+
+#introText {
+   margin-top: 170px;
+   font-size: 40px;
+   font-family: "ABeeZee";
+   padding-bottom: 10px;
+   border-bottom: 5px solid rgba(141, 56, 90, 0.5);
+}
+
+#subIntroText {
+   margin-top: 20px;
+   margin-bottom: 140px;
+}
+
+#subIntroText p {
+   font-family: ABeeZee;
+   font-size: 16px;
+   line-height: 10px;
+   color: rgba(0, 0, 0, 0.7);
+}
+
+#subIntroText p a {
+   color: rgba(141, 56, 90, 0.9);
+   text-decoration: none;
+}
+
+#divider {
+   height: 10px;
+   width: 100%;
+   background-color: rgba(109, 149, 59, 1);
+   margin-top: 50px;
+}
+
+p {
+   font-size: 40px;
+}
