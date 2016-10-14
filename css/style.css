@@ -1,21 +1,26 @@
+html {
+   
+}
+
 body {
    background-color: rgba(255, 255, 255, 1);
    margin: 0px;
+   xmin-width: 800px;
 }
 
 #underConstruction {
    border: 2px solid orange;
    position: absolute;
    font-size: 20px;
-   font-family: ABeeZee;
+   font-family: "moon";
    top: 17%;
-   left: 12%;
-   transform: rotate(-25deg);
+   left: 7%;
+   transform: rotate(-45deg);
 }
 
 #topBar {
    position: fixed;
-   top: 0px;
+   top: 0%;
    width: 100%;
    height: 80px;
    background-color: rgba(255, 255, 255, 0.9);
@@ -27,7 +32,7 @@ body {
    display: block;
    width: 100px;
    min-width: 100px;
-   height: 80px;
+   height: 81px;
    font-size: 50px;
    line-height: 80px;
    font-family: 'Passion One', cursive;
@@ -48,10 +53,8 @@ nav li {
    line-height: 80px;
    padding-right: 50px;
    display: inline-block;
-   font-family: ABeeZee;
-   
+   font-family: "ABeeZee";
    transition: 0.5s;
-   
 }
 
 nav a {
@@ -66,33 +69,33 @@ nav a:hover {
    opacity: 1.0;
 }
 
-#centerColumn {
+.centerColumn {
    width: 50%;
    margin: auto;
 }
 
 #introText {
-   margin-top: 170px;
+   margin-top: 140px;
    font-size: 40px;
    font-family: "ABeeZee";
-   padding-bottom: 10px;
-   border-bottom: 5px solid rgba(141, 56, 90, 0.5);
+   padding-bottom: 14px;
+   border-bottom: 5px solid rgb(198, 156, 173);
 }
 
 #subIntroText {
    margin-top: 20px;
-   margin-bottom: 130px;
+   margin-bottom: 60px;
 }
 
 #subIntroText p {
-   font-family: ABeeZee;
+   font-family: "ABeeZee";
    font-size: 16px;
    line-height: 10px;
    color: rgba(0, 0, 0, 0.7);
 }
 
 #subIntroText p a {
-   color: rgba(141, 0, 56, 0.8);
+   color: rgb(198, 156, 173);
    text-decoration: none;
 }
 
@@ -110,13 +113,25 @@ nav a:hover {
 .projectTile {
    position: relative;
    width: calc(100% /3);
-   float: left;
+   display: inline-block;
+   margin-right: -4px;
+   margin-bottom: -4px;
+
 }
 
 .projectTile img {
    max-width: 100%;
    display: block;
 }
+
+.projectTileOverlay {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background-color: rgba(141, 0, 56, 0.4);
+   transition: 0.3s;
+}
+
 
 .fadeInOnHover {
    position: absolute;
@@ -142,3 +157,145 @@ nav a:hover {
    font-family: ABeeZee;
    font-size: 25px;
 }
+
+#footer {
+   width: 100%;
+   min-width: 820px;
+   background-color: rgba(0, 0, 0, 0.8);
+   overflow: hidden;
+}
+
+.footerContentWrapper {
+   padding: 1.5%;
+   height: 140px;
+   max-height: 150px;
+   width: 80%;
+   position: relative;
+   margin: auto;
+   overflow: hidden;
+}
+
+#socialLinksWrapper {
+   width: 100px;
+   display: inline-block;
+}
+
+#socialLinks {
+   height: 100%;
+   margin-right: 30px;
+   display: inline-block;
+   padding: 5px;
+   text-align: center;
+}
+
+#socialLinks a {
+   color: black;
+   font-size: 30px;  
+   font-family: "ABeeZee";
+   text-decoration: none;
+   transition: 0.3s;
+   display: block;
+}
+
+#socialLinks a:hover {
+   color: rgba(109, 149, 59, 1);
+}
+
+#creditsWrapper {
+   display: inline-block;
+   vertical-align: top;
+   overflow: hidden;
+}
+
+.credits {
+   display: inline-block;
+   overflow: hidden;
+   width: 550px;
+}
+
+.credits table {
+   font-family: "ABeeZee";
+   font-size: 20px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.credits a {
+   text-decoration: none;
+   color: black;
+   transition: 0.3s;
+}
+
+.credits a:hover {
+   color: rgba(109, 149, 59, 1);
+}
+
+#remainingLinks table {
+   font-family: "ABeeZee";
+   font-size: 20px;
+   overflow: hidden;
+   padding: 5px;
+}
+
+.footerTableHead {
+   color: rgba(255, 255, 255, 0.2);
+   border-bottom: 5px solid rgba(255, 255, 255, 0.0);  
+}
+
+.credits table {
+   border-left: 1px dashed rgba(255, 255, 255, 0.2);
+   padding: 5px;
+}
+
+
+
+
+/* Weblog CSS */
+
+#weblogBody {
+   height: 200px;
+}
+
+
+
+
+
+
+/* Contact Form CSS */
+
+#contactFormWrapper {
+   background-color: rgba(0, 0, 0, 0.83); ;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   text-align: center;
+}
+
+#contactFormWrapper form {
+   width: 50%;
+   margin: auto;
+   padding: 50px;
+}
+
+
+.contactField {
+   width: 100%;
+   height: 35px;
+   background-color: rgba(255, 255, 255, 0.2); 
+   margin: 3px;
+   padding: 10px;
+   border: 0px;
+   color: rgba(255, 255, 255, 0.5); ;
+   text-align: justify;
+   font-family: ABeeZee;
+}
+
+.contactField:focus {
+   outline: none;
+   border-left: 2px solid rgb(198, 156, 173);
+}
+
+#contacterComments {
+   height: 100px;
+   vertical-align: top;
+}
+
