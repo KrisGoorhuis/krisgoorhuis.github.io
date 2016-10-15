@@ -249,6 +249,30 @@ nav a:hover {
 
 
 
+/* index CSS */
+
+
+
+@media screen and (max-width: 1200px) {
+   
+   .projectTile {
+        min-width: 50%;
+   }
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+   
+   .projectTile {
+        min-width: 100%;
+   }
+ 
+}
+
+
+
+
 
 /* Weblog CSS */
 
