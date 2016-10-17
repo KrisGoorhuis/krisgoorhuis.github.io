@@ -38,10 +38,8 @@ body {
 }
 
 #navWrapper {  
-   /* 
-   z-index was 6;
-   had some other stuff;
-   */
+   position: fixed;
+   top: 0px;
 }
 
 #standardNav li {
@@ -340,21 +338,18 @@ body {
       display: none;
    }
    
-   #navWrapper {
-      height: 80px;
-   }
-   
    #hamburgerNavWrapper {
       vertical-align: center;
+      position: absolute;
    }
    
    #hamburgerNav {
       display: block;
-      vertical-align: center;
-      font-size: 35px;
-      text-align: right;
-      padding-right: 30%;
-
+      position: absolute;
+      width: 0px;
+      top: 0px;
+      right: 0px;
+      font-size: 35px;  
       color: rgba(109, 149, 59, 1);
    }
    
