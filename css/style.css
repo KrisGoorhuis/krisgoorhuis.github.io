@@ -89,7 +89,7 @@ nav a:hover {
 #subIntroText p {
    font-family: "ABeeZee";
    font-size: 16px;
-   line-height: 10px;
+   
    color: rgba(0, 0, 0, 0.7);
 }
 
@@ -263,7 +263,7 @@ nav a:hover {
         width: 50%;
    } 
    
-   .iPhoneSize {
+   .centerColumnResponsive {
       width: 80%;
    }
    
@@ -277,12 +277,12 @@ nav a:hover {
       width: 100%;
    } 
    
-   .iPhoneSize {
+   .centerColumnResponsive {
       width: 90%;
    }
    
    #introText {
-      font-size: 2em;
+      font-size: 20px;
    }
    
 }
