@@ -258,8 +258,21 @@ nav a:hover {
 
 /* index CSS */
 
+@media screen and (max-width: 1024px) {  
+   .projectTile {
+        width: 50%;
+   } 
+   
+   .iPhoneSize {
+      width: 80%;
+   }
+   
+   #introText {
+      font-size: 34px;
+   }
+}
 
-@media screen and (max-width: 640px) {  
+@media screen and (max-width: 768px) {  
    .projectTile {
       width: 100%;
    } 
@@ -275,19 +288,7 @@ nav a:hover {
 }
 
 
-@media screen and (max-width: 1024px) and (min-width: 641px) {  
-   .projectTile {
-        width: 50%;
-   } 
-   
-   .iPhoneSize {
-      width: 80%;
-   }
-   
-   #introText {
-      font-size: 34px;
-   }
-}
+
 
 
 /* Weblog CSS */
