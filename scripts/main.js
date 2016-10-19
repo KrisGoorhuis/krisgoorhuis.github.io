@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
          document.getElementById("hamburgerButtonWrapper").addEventListener("click", function () {
             toggleHamburgerNavList();
          });
-         document.getElementById("hamburgerButton").getElementsByTagName("a").addeventListener("click", function () {
+         document.getElementById("hamburgerButton").getElementsByTagName("a").addEventListener("click", function () {
             toggleHamburgerNavList();
          });
       }
