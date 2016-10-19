@@ -80,13 +80,15 @@ body {
    color: rgba(109, 149, 59, 1.0);
 }
 
-
 #hamburgerNav { 
    z-index: 6;
+   right: 0px;
+   top: 0px;
    height: 100%;
    position: absolute;
    font-size: 35px;  
    overflow: hidden;
+   width: 0%;
 }
    
 #hamburgerNav nav {
