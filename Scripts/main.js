@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-   
+   'use strict';
    function prepareHamburger() {
       var menuOpen = false;
    
       function toggleHamburgerNavList() {
          function activateHamburger() {
-            document.getElementById("hamburgerNav").style.width = "30%";
+            document.getElementById("hamburgerNav").style.width = "60%";
             document.getElementById("hamburgerButton").classList.add("activeHamburger");
          }
          function deactivateHamburger() {
