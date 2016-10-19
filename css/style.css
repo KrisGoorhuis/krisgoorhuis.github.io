@@ -376,14 +376,15 @@ body {
       text-align: center;
    }
    
-   footerContentWrapper {
-      width: 100%;
+   .footerContentWrapper {
+      width: 95%;
    }
    
    #socialLinks {
       margin-top: 20px;
       margin-bottom: 20px;
       height: 60px;
+      width: 100%;
    }
    
    #socialLinks a {
