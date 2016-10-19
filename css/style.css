@@ -222,7 +222,8 @@ body {
 }
 
 .footerContentWrapper {
-   padding: 1.5%;  
+   padding-left: 1.5%;  
+   padding-right: 1.5%;
    width: 80%;
    position: relative;
    margin: auto; 
@@ -233,7 +234,7 @@ body {
 }
 
 #socialLinks {
-   height: 135px;
+   height: 137px;
    margin-right: 30px; 
    text-align: center;
 }
@@ -370,11 +371,18 @@ body {
    }
    
    #socialLinksWrapper {
-      width: 100%;
+      vertical-align: center;
+      width: 100%;  
       text-align: center;
    }
    
+   footerContentWrapper {
+      width: 100%;
+   }
+   
    #socialLinks {
+      margin-top: 20px;
+      margin-bottom: 20px;
       height: 60px;
    }
    
