@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
    
       function toggleHamburgerNavList() {
          function activateHamburger() {
-            document.getElementById("hamburgerNav").style.width = "60%";
+            document.getElementById("hamburgerNav").style.width = "100%";
             document.getElementById("hamburgerButton").classList.add("activeHamburger");
          }
          function deactivateHamburger() {
@@ -29,9 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
          document.getElementById("hamburgerButtonWrapper").addEventListener("click", function () {
             toggleHamburgerNavList();
          });
-         document.getElementById("hamburgerButton").getElementsByTagName("a").addEventListener("click", function () {
-            toggleHamburgerNavList();
-         });
+         
       }
       
       addHamburgerListeners();
