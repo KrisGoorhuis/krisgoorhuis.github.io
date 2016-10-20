@@ -95,18 +95,27 @@ body {
 #hamburgerNav nav {
    background-color: rgba(43, 43, 43, 0.95);
    height: 100%;
-
+   text-align: center;
 }
+
 #hamburgerNav ul {
-   vertical-align: center;
+   height: 40%;
+   margin-top: 50px;
+   width: 140px;
+   display: inline-block;
+   vertical-align: middle;
+   padding: 0px;
 }
 
 #hamburgerNav li {
    line-height: 80px;
    text-align: center;
+   width: 100%;
    display: block;
    font-family: "ABeeZee";
    transition: 0.5s;
+   display: inline-block;
+   vertical-align: middle;
 }
 
 #hamburgerNav a {
@@ -125,7 +134,6 @@ body {
 #hamburgerNav {
    margin-top: 80px;   
 }
-
 
 
 .centerColumn {
@@ -153,7 +161,7 @@ body {
    
 }
 
-#subIntroText p a {
+#subIntroText div a {
    color: rgb(198, 156, 173);
    text-decoration: none;
 }
@@ -407,19 +415,19 @@ body {
    } 
    
    .fadeInOnHover {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   opacity: 1;
-   transition: 0.3s;
-}
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: 0.3s;
+   }
    
    .centerColumnResponsive {
       width: 90%;
    }
    
    #introText {
-      font-size: 20px;
+      font-size: 24px;
    }
    
    #creditsWrapper {
