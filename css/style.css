@@ -253,7 +253,10 @@ body {
    color: white;
 }
 
-
+#aboutWrapper a {
+   color: rgb(198, 156, 173);
+   text-decoration: none;
+}
 
 
 /* Contact Form CSS */
@@ -270,7 +273,6 @@ body {
    margin: auto;
    padding: 50px;
 }
-
 
 .contactField {
    width: 100%;
