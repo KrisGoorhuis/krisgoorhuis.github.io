@@ -145,12 +145,12 @@ body {
    margin-top: 140px;
    font-size: 36px;
    font-family: "ABeeZee";
-   padding-bottom: 14px;
+   padding-bottom: 10px;
    border-bottom: 5px solid rgb(198, 156, 173);
 }
 
 #subIntroText {
-   margin-top: 20px;
+   margin-top: 10px;
    margin-bottom: 60px;
 }
 
