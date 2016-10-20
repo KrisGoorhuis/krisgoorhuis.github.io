@@ -100,7 +100,7 @@ body {
 
 #hamburgerNav ul {
    height: 40%;
-   margin-top: 50px;
+   margin-top: 45px;
    width: 140px;
    display: inline-block;
    vertical-align: middle;
@@ -115,13 +115,12 @@ body {
    font-family: "ABeeZee";
    transition: 0.5s;
    display: inline-block;
-   vertical-align: middle;
 }
 
 #hamburgerNav a {
    text-decoration: none;
    color: rgba(109, 149, 59, 1.0);
-   transition: 0.23s;
+   transition: 0.3s;
    opacity: 1;
 }
 
