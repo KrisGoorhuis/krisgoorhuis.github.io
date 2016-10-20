@@ -142,6 +142,7 @@ body {
 
 #introText {
    margin-top: 140px;
+   margin-bottom: 0px;
    font-size: 36px;
    font-family: "ABeeZee";
    padding-bottom: 10px;
