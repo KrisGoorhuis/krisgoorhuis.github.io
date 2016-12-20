@@ -1,4 +1,17 @@
+
+
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+       // alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("jQuery didn't load. :(");
+    }
+};
+
 document.addEventListener("DOMContentLoaded", function () {
+   
    'use strict';
    function prepareHamburger() {
       var menuOpen = false;
@@ -36,8 +49,27 @@ document.addEventListener("DOMContentLoaded", function () {
    }
    
    
+   function sendMailToKris() {
+      var name = $("#contactName").val();
+      var email =$("#contactEmail").val();
+      var message = $("#contactComments").val();
+      $("#submitMail").css("width", "120px");
+      $("#submitMail").html("Sending...");
+      $.get("http://localhost:3000/send", {name: name, email:email, message:message}, function(data) {
+         alert("Get request sent!");
+         if (data == "sent") {
+            
+            $("#sendMail").html("Submit");
+            $("#submitMail").css("width", "80px");
+            alert("'sent' was returned!");
+         };
+      });
+   };
+     
+
+   
    prepareHamburger();
    
-});
+   $("#submitMail").on("click", sendMailToKris);
    
-
+});

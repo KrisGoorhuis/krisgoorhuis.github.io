@@ -6,14 +6,15 @@
    
    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-   
+   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
    
    <meta name="viewport" content="initial-scale=1">
    <meta name="viewport" content="width=device-width">
    
    <script src="https://krisgoorhuis.github.io/scripts/main.js" type="text/javascript"></script>
-   <script src="scripts/main.js" type="text/javascript"></script>
+   <script src="../scripts/main.js" type="text/javascript"></script>
    <script src="https://use.fontawesome.com/cdd7c0079a.js"></script>
+   <script src="../libraries/jquery-3.1.1.js"></script>
 </head>
 
 
@@ -38,12 +39,14 @@
       </div>
    </div>
    
-   <nav><ul>
+   <div id="hamburgerNav">       
+      <nav><ul>
          <li><a href="https://krisgoorhuis.github.io/index.html">Home</a></li> 
          <li><a href="https://krisgoorhuis.github.io/pages/weblog.html">Weblog</a></li>
-         <li><a href="https://krisgoorhuis.github.io/pages/about.html">About</a></li>
-         <li><a href="#">Contact</a></li>               
-      </ul></nav>
+         <li><a href="#">About</a></li>
+         <li><a href="https://krisgoorhuis.github.io/pages/contact.html">Contact</a></li>               
+      </ul></nav>     
+   </div>
 
 
    <div class="centerColumn centerColumnResponsive">
@@ -66,24 +69,23 @@
    
    
    <div id="contactFormWrapper">
-   
-      <form>
-         <input type="text" placeholder="Name" id="contacterName" class="contactField"><br>
-            
-         <input type="text" placeholder="Email" id="contacterEmail" class="contactField"><br>
+      <div class="centerColumn centerColumnResponsive">
+         <form>
+            <input type="text" placeholder="Name" id="contactName" class="contactField"><br>
 
-         <textarea placeholder="I don't really function yet. Sorry!" id="contacterComments" class="contactField"></textarea><br>
+            <input type="text" placeholder="Email" id="contactEmail" class="contactField"><br>
 
-         <input type="submit" id="contacterSubmit">
-      </form>
-   
+            <textarea placeholder="I don't really function yet. Sorry!" id="contactComments" class="contactField"></textarea><br>
+
+            <div id="submitMail">
+               Submit
+            </div>
+
+         </form>
+      </div>
    
    
    </div>
-   
-   
-   
-   
    
    
    
@@ -117,9 +119,9 @@
                      <td><a href="http://fontawesome.io/" target="_blank">Font Awesome</a></td>
                   </tr>
                   <tr>
-                     <td><a href="#" target="_blank">Google Fonts</a></td>
+                     <td><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></td>
                   </tr> 
-                  <tr><td>&nbsp</td></tr>            
+                  <tr><td><a href="https://pages.github.com/" target="_blank">Github Pages</a></td></tr>            
                </table>
                
                <table>
@@ -130,7 +132,7 @@
                      <td><a href="http://www.alexcornell.com/" target="_blank">alexcornell.com</a></td>
                   </tr>     
                   <tr>
-                     <td><a href="#" target="_blank">spacex.com</a></td>
+                     <td><a href="http://www.spacex.com/" target="_blank">spacex.com</a></td>
                   </tr> 
                   <tr><td>&nbsp</td></tr>    
                </table>

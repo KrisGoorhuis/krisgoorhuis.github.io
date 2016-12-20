@@ -20,7 +20,8 @@ body {
    height: 81px;
    font-size: 50px;
    line-height: 80px;
-   font-family: 'Passion One', cursive;
+   font-family: 'Inconsolata', cursive;
+   font-weight: 600;
    text-align: center;
    color: rgba(109, 149, 59, 1);
    background-color: black;
@@ -141,17 +142,17 @@ body {
 }
 
 #introText {
-   margin-top: 140px;
+   margin-top: 180px;
    margin-bottom: 0px;
    font-size: 36px;
-   font-family: "ABeeZee";
+   font-family: "Inconsolata";
    padding-bottom: 10px;
    border-bottom: 5px solid rgb(198, 156, 173);
 }
 
 #subIntroText {
    margin-top: 10px;
-   margin-bottom: 60px;
+   margin-bottom: 70px;
 }
 
 #subIntroText div {
@@ -221,7 +222,7 @@ body {
    text-align: center;
    background-color: rgba(0, 0, 0, 0.5);
    color: white;
-   font-family: ABeeZee;
+   font-family: "ABeeZee";
    font-size: 25px;
 }
 
@@ -246,17 +247,40 @@ body {
 #aboutWrapper {
    background-color: rgba(43, 43, 43, 1);
    width: 100%;
-   height: 300px;
-   padding-top: 30px;
-   font-family: ABeeZee;
-   font-size: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-family: 'Lato';
+   font-size: 19px;
    color: white;
+   text-align: justify;
+   height: auto;
 }
 
 #aboutWrapper a {
    color: rgb(198, 156, 173);
    text-decoration: none;
 }
+
+#aboutWrapper p {
+   margin-bottom: 20px;
+}
+
+
+
+#abstractArt {
+   width: 45%;
+   margin-right: 20px;
+}
+
+#portrait {
+   width: 150px;
+   border-radius: 50%;
+   margin-left: 20px;
+   margin-bottom: 20px;
+   border: 5px solid rgba(109, 149, 59, 1);
+}
+
+
 
 
 /* Contact Form CSS */
@@ -268,22 +292,21 @@ body {
    text-align: center;
 }
 
+
 #contactFormWrapper form {
-   width: 50%;
+   width: 80%;
    margin: auto;
-   padding: 50px;
 }
 
 .contactField {
    width: 100%;
    height: 35px;
-   background-color: rgba(255, 255, 255, 0.2); 
-   margin: 3px;
-   padding: 10px;
+   background-color: rgba(85, 85, 85, 1); 
+   margin-top: 3px;
    border: 0px;
-   color: rgba(255, 255, 255, 0.5); ;
+   color: rgba(150, 169, 161, 1);
    text-align: justify;
-   font-family: ABeeZee;
+   font-family: "ABeeZee;
 }
 
 .contactField:focus {
@@ -291,10 +314,30 @@ body {
    border-left: 2px solid rgb(198, 156, 173);
 }
 
-#contacterComments {
+#contactComments {
    height: 100px;
    vertical-align: top;
 }
+
+#submitMailContainer {
+   
+}
+
+#submitMail {
+   width: 80px;
+   height: 30px;
+   display: block;
+   margin: auto;
+   text-decoration: none;
+   background-color: rgba(85, 85, 85, 1);
+   line-height: 30px;
+   font-size: 20px;
+   font-family: 'Inconsolata';
+   color: rgb(198, 156, 173);
+   margin: auto;
+   margin-top: 3px;
+}
+
 
 #footer {
    width: 100%;
@@ -321,7 +364,6 @@ body {
 #socialLinks a {
    color: black;
    font-size: 30px;  
-   font-family: "ABeeZee";
    text-decoration: none;
    transition: 0.3s;
    display: block;
@@ -399,7 +441,8 @@ body {
 
 @media screen and (max-width: 768px) {  
    
-   /* Hamburger Nav */
+         /* Hamburger Nav */
+   
    #topbar {
       position: absolute;
    }
@@ -457,5 +500,6 @@ body {
       display: inline-block;
       font-size: 50px;
       margin: 4px;
+      color: rgba(109, 149, 59, 1);
    }  
 }
