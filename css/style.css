@@ -152,7 +152,7 @@ body {
 
 #subIntroText {
    margin-top: 10px;
-   margin-bottom: 70px;
+   margin-bottom: 100px;
 }
 
 #subIntroText div {
@@ -174,15 +174,18 @@ body {
    margin-top: 50px;
 }
 
-#projectGalleryWrapper {
-   margin-bottom: 100px;
+.projectGalleryWrapper {
+   padding-bottom: calc(6%/4);
+   background-color: rgba(43, 43, 43, 1);
 }
 
 .projectTile {
    position: relative;
-   width: calc(100% /3);
+   width: calc(94% /3);
+   margin-left: calc(6%/4);
+   margin-top: calc(6%/4);
    display: inline-block;
-   margin-right: -4px;
+   
    margin-bottom: -4px;
 
 }
@@ -427,7 +430,7 @@ body {
 
 @media screen and (max-width: 1024px) {  
    .projectTile {
-        width: 50%;
+        width: 47.5%;
    } 
    
    .centerColumnResponsive {
@@ -456,7 +459,7 @@ body {
    
    
    .projectTile {
-      width: 100%;
+      width: 97%;
    } 
    
    .fadeInOnHover {
