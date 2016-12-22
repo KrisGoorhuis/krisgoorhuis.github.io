@@ -182,17 +182,16 @@ body {
 .projectTile {
    position: relative;
    width: calc(96% /3);
-   margin-left: calc(3%/4);
-   margin-top: calc(3%/4);
+   margin-left: calc(3.5%/4);
+   margin-top: calc(3.5%/4);
    display: inline-block;
-   
-   margin-bottom: -4px;
 
 }
 
 .projectTile img {
    width: 100%;
    display: block;
+   border: 0px solid black;
 }
 
 .projectTileOverlay {
