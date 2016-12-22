@@ -6,7 +6,7 @@ var nodemailerSend = require('./contactMe.js');
 
 
 
-app.get('/send', function(request, response) {
+app.get('https://github.com/KrisGoorhuis/krisgoorhuis.github.io/send', function(request, response) {
    console.log("Get request received.");
    var mailOptions = {
       from: "from",

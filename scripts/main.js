@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var message = $("#contactComments").val();
       $("#submitMail").css("width", "120px");
       $("#submitMail").html("Sending...");
-      $.get("http://krisgoorhuis.com/send", {name: name, email:email, message:message}, function(data) {
+      $.get("https://github.com/KrisGoorhuis/krisgoorhuis.github.io/send", {name: name, email:email, message:message}, function(data) {
          alert("Get request sent!");
          if (data == "sent") {
             
