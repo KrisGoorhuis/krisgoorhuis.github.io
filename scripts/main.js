@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var message = $("#contactComments").val();
       $("#submitMail").css("width", "120px");
       $("#submitMail").html("Sending...");
-      $.get("http://71.63.160.254/send", {name: name, email:email, message:message}, function(data) {
+      $.get("http://krisgoorhuis.com/send", {name: name, email:email, message:message}, function(data) {
          alert("Get request sent!");
          if (data == "sent") {
             
