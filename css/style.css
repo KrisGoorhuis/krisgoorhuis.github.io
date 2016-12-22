@@ -182,8 +182,8 @@ body {
 .projectTile {
    position: relative;
    width: calc(96% /3);
-   margin-left: calc(4%/4);
-   margin-top: calc(4%/4);
+   margin-left: calc(3%/4);
+   margin-top: calc(3%/4);
    display: inline-block;
    
    margin-bottom: -4px;
