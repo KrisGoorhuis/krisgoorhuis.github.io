@@ -32,9 +32,11 @@ app.get('https://github.com/KrisGoorhuis/krisgoorhuis.github.io/send', function(
    smtpTransport.sendMail(mailOptions, function(error, info) {
       if (error) {
          console.log("Something went wrong with nodemailer: /n" + error);
+         response.addHeader("Access-Control-Allow-Origin", "*");
          response.end("error");
       } else {
          console.log("Mail sending to successfully.");
+         response.addHeader("Access-Control-Allow-Origin", "*");
          response.send("sent");
          response.end();
       }
