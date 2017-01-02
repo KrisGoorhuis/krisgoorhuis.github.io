@@ -223,7 +223,7 @@ body {
    padding-bottom: 2%;
    text-align: center;
    background-color: rgba(0, 0, 0, 0.5);
-   color: white;
+   color: rgb(198, 156, 173);
    font-family: "ABeeZee";
    font-size: 25px;
 }
@@ -458,7 +458,7 @@ body {
    
    
    .projectTile {
-      width: 97%;
+      width: 98%;
    } 
    
    .fadeInOnHover {

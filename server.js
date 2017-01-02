@@ -1,7 +1,9 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
 var app = express();
-
+app.set('views', __dirname + '/');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
 app.get('/send', function(request, response) {
    console.log("Get request received.");
@@ -39,6 +41,13 @@ app.get('/send', function(request, response) {
       }
    });
    
+});
+
+app.get('/', function(request, response) {
+    console.log("Request for index received");
+    response.render('index.html', {title: 'home'})
+    
+    
 });
 
 app.listen(3000, function() {

@@ -1,5 +1,3 @@
-
-
 window.onload = function() {
     if (window.jQuery) {  
         // jQuery is loaded  
