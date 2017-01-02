@@ -1,9 +1,6 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
 var app = express();
-var nodemailerSend = require('./contactMe.js');
-
-
 
 
 app.get('/send', function(request, response) {
@@ -16,7 +13,7 @@ app.get('/send', function(request, response) {
       email: request.query.email,
       text: "Message received from " + request.query.name 
          + " at " + request.query.email
-         + "\n\n" + request.query.message, // the body the user provided
+         + "\n\n" + request.query.message, 
 
    }
    
@@ -40,7 +37,6 @@ app.get('/send', function(request, response) {
          response.send("sent");
          response.end();
       }
-
    });
    
 });
