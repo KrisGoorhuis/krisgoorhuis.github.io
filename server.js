@@ -50,6 +50,6 @@ app.get('/', function(request, response) {
     
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
    console.log("Express started on port 3000");
 });
