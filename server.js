@@ -4,7 +4,7 @@ var app = express();
 app.set('views', __dirname + '/');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public', 'apps/assets'));
 
 app.get('/send', function(request, response) {
    console.log("Get request received.");
