@@ -51,12 +51,10 @@ app.get('/send', function(request, response) {
    
 });
 
-app.get('/', function(request, response) {
-    console.log("Request for index received");
-    response.render('index.html', {title: 'home'})
-    
-    
-});
+//app.get('/', function(request, response) {
+    //console.log("Request for index received");
+    //response.render('pages/index.html', {title: 'home'})
+//});
 
 app.get('/'), function(request, response) {
    
