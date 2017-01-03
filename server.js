@@ -6,6 +6,11 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use(express.static(__dirname + '/public'));
 
+
+app.listen(process.env.PORT || 3000, function() {
+   console.log("Express started on port 3000");
+});
+
 app.get('/send', function(request, response) {
    console.log("Get request received.");
    var mailOptions = {
@@ -51,6 +56,3 @@ app.get('/', function(request, response) {
     
 });
 
-app.listen(process.env.PORT || 3000, function() {
-   console.log("Express started on port 3000");
-});
