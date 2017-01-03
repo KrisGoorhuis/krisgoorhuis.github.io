@@ -1,11 +1,12 @@
+var path = require('path');
 var express = require('express');
 var nodemailer = require('nodemailer');
 var app = express();
 app.set('views', __dirname + '/');
 app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
-app.use(express.static(__dirname + './public'));
-//var file = new static.Server('./public');
+//app.set('view engine', 'html');
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 app.listen(process.env.PORT || 3000, function() {
@@ -57,3 +58,6 @@ app.get('/', function(request, response) {
     
 });
 
+app.get('/'), function(request, response) {
+   
+}
