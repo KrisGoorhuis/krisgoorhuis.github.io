@@ -42,8 +42,8 @@ app.get('/send', function(request, response) {
          response.addHeader("Access-Control-Allow-Origin", "*");
          response.end("error");
       } else {
-         console.log("Mail sending to successfully.");
-         response.addHeader("Access-Control-Allow-Origin", "*");
+         console.log("Mail sending successfully.");
+         //response.addHeader("Access-Control-Allow-Origin", "*");
          response.send("sent");
          response.end();
       }

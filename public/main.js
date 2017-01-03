@@ -9,6 +9,7 @@ window.onload = function() {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+   var mailSent = false;
    
    'use strict';
    function prepareHamburger() {
@@ -46,6 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
       addHamburgerListeners();
    }
    
+   $("#form").on("click", function() {
+      if (mailSent === true) {
+         $("#submitMail").html("Submit");
+      }
+   })
+   
    
    function sendMailToKris() {
       var name = $("#contactName").val();
@@ -54,12 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
       $("#submitMail").css("width", "120px");
       $("#submitMail").html("Sending...");
       $.get("/send", {name: name, email:email, message:message}, function(data) {
-         alert("Get request sent!");
+         console.log("Get request sent!");
          if (data == "sent") {
-            
-            $("#sendMail").html("Submit");
+            mailSent = true;
+            $("#submitMail").html("Sent!");
             $("#submitMail").css("width", "80px");
-            alert("'sent' was returned!");
+            console.log("'sent' was returned!");
          };
       });
    }; // local host send address: http://localhost:3000/send
