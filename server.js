@@ -4,7 +4,8 @@ var app = express();
 app.set('views', __dirname + '/');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + './public'));
+//var file = new static.Server('./public');
 
 
 app.listen(process.env.PORT || 3000, function() {
