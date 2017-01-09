@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
    
-   $("#form").on("click", function() {
+   $(".contactField").on("click", function() {
       if (mailSent === true) {
          $("#submitMail").html("Submit");
       }
