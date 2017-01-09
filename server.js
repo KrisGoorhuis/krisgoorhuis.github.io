@@ -22,7 +22,7 @@ app.get('/send', function(request, response) {
       name: request.query.name,
       email: request.query.email,
       text: "Message received from " + request.query.name 
-         + " at " + request.query.email
+         + " via " + request.query.email
          + "\n\n" + request.query.message, 
 
    }

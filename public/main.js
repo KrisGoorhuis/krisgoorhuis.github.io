@@ -47,11 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       addHamburgerListeners();
    }
    
-   $("#form").on("click", function() {
-      if (mailSent === true) {
-         $("#submitMail").html("Submit");
-      }
-   })
+  
    
    
    function sendMailToKris() {
@@ -71,10 +67,52 @@ document.addEventListener("DOMContentLoaded", function () {
       });
    }; // local host send address: http://localhost:3000/send
      
+   function validateContactFields() {
+      var emailIsSendable = true;
+      if ($("#contactName").val() === "") {
+         $("#contactName").css("background-color", "rgba(95, 65, 65, 1)");
+         emailIsSendable = false;
+      } else {
+         $("#contactName").css("background-color", "rgba(85, 85, 85, 1");
+      }    
+      
+      if ($("#contactEmail").val() === "") {
+         $("#contactEmail").css("background-color", "rgba(95, 65, 65, 1)");
+         emailIsSendable = false;
+      } else {
+         $("#contactEmail").css("background-color", "rgba(85, 85, 85, 1");
+      }   
+      
+      if ($("#contactComments").val() === "") {
+         $("#contactComments").css("background-color", "rgba(95, 65, 65, 1)");
+         emailIsSendable = false;
+      } else {
+         $("#contactComments").css("background-color", "rgba(85, 85, 85, 1");
+      }
+      
+      return emailIsSendable;
+   };
+
 
    
-   prepareHamburger();
+   $("#form").on("click", function() {
+      if (mailSent === true) {
+         $("#submitMail").html("Submit");
+      }
+   });
+    
+   $("#submitMail").on("click", function() {
+      var emailIsSendable = validateContactFields();
+      alert(emailIsSendable);
+      
+      if (emailIsSendable === false) {
+      }
+      if (emailIsSendable === true) {
+         sendMailToKris();
+      }
+      
+   });
    
-   $("#submitMail").on("click", sendMailToKris);
+   prepareHamburger();
    
 });

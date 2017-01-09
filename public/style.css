@@ -311,6 +311,11 @@ body {
    font-family: "ABeeZee;
 }
 
+#form input {
+   padding-left: 3px;
+}
+
+
 .contactField:focus {
    outline: none;
    border-left: 2px solid rgb(198, 156, 173);
@@ -319,6 +324,7 @@ body {
 #contactComments {
    height: 100px;
    vertical-align: top;
+   padding-left: 3px;
 }
 
 #submitMailContainer {
