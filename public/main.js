@@ -103,10 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
    $("#submitMail").on("click", function() {
       var emailIsSendable = validateContactFields();
-      
-      if (emailIsSendable === false) {
-      }
-      if (emailIsSendable === true) {
+      if (emailIsSendable === true && $("#submitMail").html() === "Submit") {
          sendMailToKris();
       }
       
