@@ -58,14 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
       $("#submitMail").html("Sending...");
       $.get("/send", {name: name, email:email, message:message}, function(data) {
          console.log("Get request sent!");
-         if (data == "sent") {
+         if (data == "sent") { // We get this back in the response from server.js.
             mailSent = true;
             $("#submitMail").html("Sent!");
             $("#submitMail").css("width", "80px");
             console.log("'sent' was returned!");
          };
       });
-   }; // local host send address: http://localhost:3000/send
+   };
      
    function validateContactFields() {
       var emailIsSendable = true;

@@ -7,13 +7,11 @@ app.engine('html', require('ejs').renderFile);
 //app.set('view engine', 'html');
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT || 3000, function() { // Process.env.PORT is provided by Heroku (my host), I think. If it's not available (eg, testing locally) it'll default to 3000.
    console.log("Express started on port 3000");
 });
 
-app.get('/send', function(request, response) {
+app.get('/send', function(request, response) { // If a get request is sent to the base URL/send (which our contact button does), do this.
    console.log("Get request received.");
    var mailOptions = {
       from: "from",
@@ -24,10 +22,8 @@ app.get('/send', function(request, response) {
       text: "Message received from " + request.query.name 
          + " via " + request.query.email
          + "\n\n" + request.query.message, 
-
    }
    
-   console.log("To address: " + mailOptions.to)
    var smtpTransport = nodemailer.createTransport({
       service: "Gmail",
       auth: {
@@ -50,12 +46,3 @@ app.get('/send', function(request, response) {
    });
    
 });
-
-//app.get('/', function(request, response) {
-    //console.log("Request for index received");
-    //response.render('pages/index.html', {title: 'home'})
-//});
-
-app.get('/'), function(request, response) {
-   
-}
