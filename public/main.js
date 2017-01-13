@@ -76,7 +76,13 @@ document.addEventListener("DOMContentLoaded", function () {
          $("#contactName").css("background-color", "rgba(85, 85, 85, 1");
       }    
       
-      if ($("#contactEmail").val() === "") {
+      var givenAddress = $("#contactEmail").val();
+      var atPosition = givenAddress.indexOf("@");
+      var dotPosition = givenAddress.indexOf(".");
+      
+      
+      
+      if ($("#contactEmail").val() === "" || atPosition<1) {
          $("#contactEmail").css("background-color", "rgba(95, 65, 65, 1)");
          emailIsSendable = false;
       } else {

@@ -265,8 +265,17 @@ body {
 
 #aboutWrapper p {
    margin-bottom: 20px;
+   font-family: "ABeeZee";
 }
 
+h2 {
+   font-family: 'Inconsolata';
+}
+
+#smallPrint {
+   font-size: 12px;
+   margin-top: -20px;
+}
 
 
 #abstractArt {
