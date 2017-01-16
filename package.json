@@ -10,7 +10,8 @@
      "ejs": "2.4.1",
      "express": "^4.14.0",
      "nodemailer": "^2.6.4",
-      "jquery": "3.1.1"
+      "jquery": "3.1.1",
+      "angular": "1.6.1"
    },
    "devDependencies": {},
    "scripts": {

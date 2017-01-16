@@ -1,3 +1,4 @@
+<html ng-app>
 <head>
    <!--<link href="https://krisgoorhuis.github.io/css/style.css" type="text/css" rel="stylesheet">
    <link href="http://127.0.0.1/Personal%20Website/css/style.css" type="text/css" rel="stylesheet">-->
@@ -16,6 +17,7 @@
    <script src="../main.js" type="text/javascript"></script>
    <script src="https://use.fontawesome.com/cdd7c0079a.js"></script>
    <script src="../jquery-3.1.1.js"></script>
+   <script src="angular.min.js"></script>
 </head>
 
 
@@ -27,10 +29,10 @@
       <div class="centerColumn">
          <div id="navWrapper">
             <nav id="standardNav">
-               <li><a href="index.html">Home</a></li> 
-               <li><a href="pages/weblog.html">Weblog</a></li>
-               <li><a href="pages/about.html">About</a></li>
-               <li><a href="pages/contact.html">Contact</a></li>
+               <li><a href="www.krisgoorhuis.com/index.html">Home</a></li> 
+               <li><a href="www.krisgoorhuis.com/pages/weblog.html">Weblog</a></li>
+               <li><a href="www.krisgoorhuis.com/pages/about.html">About</a></li>
+               <li><a href="www.krisgoorhuis.com/pages/contact.html">Contact</a></li>
             </nav>
             
            
@@ -154,72 +156,7 @@
 
 
 
-   <div id="footer">
-      <div class="footerContentWrapper">
-         <div id="socialLinksWrapper">
-            <div id="socialLinks">
-               <a href="https://twitter.com/krisgoorhuis" target="_blank">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-               </a>
-               <a href="https://github.com/KrisGoorhuis" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-               </a>
-               <a href="#" target=_blank>
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-               </a>
-               <a href="http://codepen.io/krisgoorhuis/" target="_blank">
-                  <i class="fa fa-codepen" aria-hidden="true"></i>
-               </a>           
-            </div>
-         </div>
-         
-         <div id="creditsWrapper">
-            <div class="credits">
-               
-               <table>
-                  <tr >
-                     <td class="footerTableHead">Made With</td>
-                  </tr>
-                  <tr>
-                     <td><a href="http://fontawesome.io/" target="_blank">Font Awesome</a></td>
-                  </tr>
-                  <tr>
-                     <td><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></td>
-                  </tr> 
-                  <tr><td><a href="https://pages.github.com/" target="_blank">Github Pages</a></td></tr>            
-               </table>
-               
-               <table>
-                  <tr>
-                     <td class="footerTableHead">Inspired By</td>
-                  </tr>               
-                  <tr>
-                     <td><a href="http://www.alexcornell.com/" target="_blank">alexcornell.com</a></td>
-                  </tr>     
-                  <tr>
-                     <td><a href="http://www.spacex.com/" target="_blank">spacex.com</a></td>
-                  </tr> 
-                  <tr><td>&nbsp</td></tr>    
-               </table>
-               <table>
-                  <tr>
-                     <td class="footerTableHead">Recent Logs</td>
-
-                  </tr>
-                  <tr>
-                     <td><a href="#" target="_blank">Lorem Ipsum</a></td>
-                  </tr> 
-                  <tr>
-                     <td><a href="#" target="_blank"> dolor sit amet</a></td>
-                  </tr> 
-                  <tr><td>&nbsp</td></tr>   
-               </table>
-               
-               
-            </div>
-         </div>
-        
-      </div>
-   </div>
+   <footer ng-include="'pages/footer.html'"></footer>
 
 </body>
+</html>
