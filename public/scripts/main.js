@@ -8,7 +8,7 @@ window.onload = function() {
     }
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
    var mailSent = false;
    
    'use strict';
@@ -117,4 +117,4 @@ document.addEventListener("DOMContentLoaded", function () {
    
    prepareHamburger();
    
-});
+};
