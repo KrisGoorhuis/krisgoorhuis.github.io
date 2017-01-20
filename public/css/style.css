@@ -296,6 +296,14 @@ h2 {
 
 /* Contact Form CSS */
 
+input.ng-invalid.ng-dirty {
+   background-color: rgba(95, 65, 65, 1);
+}
+
+.ing-valid.ng-dirty {
+   
+}
+
 #contactFormWrapper {
    background-color: rgba(43, 43, 43, 1);
    padding-top: 50px;
@@ -445,7 +453,7 @@ h2 {
 
 @media screen and (max-width: 1024px) {  
    .projectTile {
-        width: 47.5%;
+        width: 48.5%;
    } 
    
    .centerColumnResponsive {
