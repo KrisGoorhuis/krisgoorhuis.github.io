@@ -2,10 +2,10 @@ var path = require('path');
 var express = require('express');
 var nodemailer = require('nodemailer');
 var app = express();
-app.set('views', __dirname + '/');
+app.set('views', __dirname + '/app/views');
 app.engine('html', require('ejs').renderFile);
 //app.set('view engine', 'html');
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(process.env.PORT || 3000, function() { // Process.env.PORT is provided by Heroku (my host), I think. If it's not available (eg, testing locally) it'll default to 3000.
    console.log("Express started on port 3000");
